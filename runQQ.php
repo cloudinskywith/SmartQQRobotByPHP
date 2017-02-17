@@ -76,16 +76,51 @@ if($robot_id == ""){
                     $RobotMsg->InsertMsg( '收到' . count($poll['result']) . "条新消息" );
                     if (isset($poll['result']) && count($poll['result']) < 20) {
                         $poll = $QQ->dealMessage($poll);
-                        $poll['group_uin'] = isset($poll['group_uin']) ? $poll['group_uin'] : "";
-                        $RobotMsg->InsertMsg(  $poll['senderQQ'] .":". $poll['msg']  , $poll['senderQQ'] , $poll['group_uin']);
-                        $QQ->sendMsg($poll['from_uin'],$poll['msg']);
+                        $RobotMsg->InsertMsg($poll['msg'],$poll['senderQQ'],$poll['from_uin']);
+                        $orders = $Robot->getPluginOrders();
+                        $Plugin = null;
+                        $poll['msg'] = isset($poll['msg']) ? $poll['msg'] : "";
+                        foreach ($orders AS $order){
+                            $pro = explode($order['order_name'],$poll['msg']);
+                            if(count($pro) >= 2  && $order['status']){
+                                $Plugin = Robot::runPlugin($order['plugin_class'],$poll,$RobotFriend,$RobotGroup,$RobotDiscuss);
+                                if($Plugin->MsgCount == 0){
+                                    $Plugin = null;
+                                    continue;
+                                }else{
+                                    break;
+                                }
+                            }
+                        }
+                        if($Plugin == null){
+                            $Plugin = Robot::runPlugin("YiBaoPlugin",$poll,$RobotFriend,$RobotGroup,$RobotDiscuss);
+                        }
+                        foreach ($Plugin->replyMsg  as $item){
+                            switch ($item['type']){
+                                case "personal":
+                                    if($Robot->is_reply && !$Robot->is_personal_speech){
+                                        $QQ->sendMsg($item['uin'],$item['msg']);
+                                    }
+                                    break;
+                                case "group":
+                                    if($Robot->is_reply && !$Robot->is_group_speech){
+                                        $QQ->sendMsg($item['uin'],$item['msg'],true);
+                                    }
+                                    break;
+                                default:
+
+                                    break;
+                            }
+                        }
+
+
                     }
                 } elseif (@array_key_exists('retcode', $poll) && ($poll['retcode'] == 103 || $poll['retcode'] == 100012)) {
                     $RobotMsg->InsertMsg( '身份验证失效，请重新登录 如多次出现 请去官网登陆后注销等即可~' . (isset($poll['errmsg']) ? $poll['errmsg'] : ''));
                     $Robot->setOnlineStatus(StatusUtil::INIT);
                     break;
                 } elseif (@array_key_exists('retcode', $poll)) {
-                    if (isset($poll['errmsg']) && !DataUtil::is_empty($poll['errmsg'])) {
+                    if (isset($poll['errmsg']) && !isset($poll['errmsg'])) {
                         $RobotMsg->InsertMsg( "Error:".$poll['retcode'].$poll['errmsg']);
 
                         break;

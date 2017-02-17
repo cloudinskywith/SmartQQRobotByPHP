@@ -296,6 +296,7 @@ class SmartQQ
         $send_uin = self::getFriendQQBySendUin($from_uin);
         return array(
             'code'      =>0,
+            'type'      =>'personalMsg',
             'msg'       =>$msg,
             'from_uin'  =>$from_uin,
             'senderQQ'  =>$send_uin,
@@ -318,11 +319,13 @@ class SmartQQ
         $member_uin = self::getFriendQQBySendUin($send_uin);
         return array(
             'code'      =>0,
+            'type'      =>'groupMsg',
             'msg'       =>$msg,
-            'group_code'=>$group_code,
             'send_uin'  =>$send_uin,
             'from_uin'  =>$from_uin,
             'senderQQ'  =>$member_uin,
+            'group_code'=>$group_code,
+
         );
 
 
@@ -344,11 +347,12 @@ class SmartQQ
         $member_uin = self::getFriendQQBySendUin($send_uin);
         return array(
             'code'      =>0,
+            'type'      =>'didMsg',
             'msg'       =>$msg,
-            'did'       =>$did,
             'send_uin'  =>$send_uin,
             'from_uin'  =>$from_uin,
             'senderQQ'  =>$member_uin,
+            'did'       =>$did,
         );
 
     }
@@ -372,6 +376,7 @@ class SmartQQ
             $qunm = !$qunm ? "本群" : $qunm;
             return array(
                 'code'          =>0,
+                'msg'           =>'',
                 'nick'          =>$nick,
                 'qunm'          =>$qunm,
                 'to_uin'        =>$to_uin,
@@ -451,6 +456,10 @@ class SmartQQ
         return $results;
     }
 
+
+    /**
+     * @return mixed
+     */
     public function getFriendUinList(){
         $url = "http://s.web2.qq.com/api/get_user_friends2";
         $hash = self::hashUin($this->uin,$this->ptwebqq);
@@ -462,17 +471,15 @@ class SmartQQ
     }
 
 
-
-
-//    public function getGroupUinList(){
-//        $url = "http://s.web2.qq.com/api/get_group_name_list_mask2";
-//        $hash = self::hashUin($this->uin,$this->ptwebqq);
-//        $param = "r=%7B%22vfwebqq%22%3A%22{$this->vfwebqq}%22%2C%22hash%22%3A%22{$hash}%22%7D";
-//        $this->Curl->referer = self::REFERER_GETINFO;
-//        $this->Curl->submit($url,$param);
-//        $this->results = $this->Curl->results;
-//        return $this->results;
-//    }
+    public function getGroupUinList(){
+        $url = "http://s.web2.qq.com/api/get_group_name_list_mask2";
+        $hash = self::hashUin($this->uin,$this->ptwebqq);
+        $param = "r=%7B%22vfwebqq%22%3A%22{$this->vfwebqq}%22%2C%22hash%22%3A%22{$hash}%22%7D";
+        $this->Curl->referer = self::REFERER_GETINFO;
+        $this->Curl->submit($url,$param);
+        $this->results = $this->Curl->results;
+        return $this->results;
+    }
 
 
     public function getDiscusDidlist(){
@@ -557,7 +564,6 @@ class SmartQQ
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);
         $results = $this->results;
-//        $results = @json_decode(($this->results),true);
         return $results;
     }
 
@@ -577,8 +583,8 @@ class SmartQQ
         $this->Curl->submit($url,$param);
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);
-        $results = @json_decode(($this->results),true);
-        return @$results['ec'] == 0 ? true : false;
+        $results = $this->results;
+        return $results;
     }
 
     /**
@@ -596,8 +602,8 @@ class SmartQQ
         $this->Curl->submit($url,$param);
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);
-        $results = @json_decode(($this->results),true);
-        return @$results['ec'] == 0 ? true : false;
+        $results = $this->results;
+        return $results;
     }
 
     /**
@@ -614,8 +620,8 @@ class SmartQQ
         $this->Curl->submit($url,$param);
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);
-        $results = @json_decode(($this->results),true);
-        return @$results['ec'] == 0 ? true : false;
+        $results = $this->results;
+        return $results;
     }
 
 
@@ -633,11 +639,12 @@ class SmartQQ
     public function addGroupMember($group_uin, $QQ) {
         $url = "http://qun.qq.com/cgi-bin/qun_mgr/add_group_member";
         $param = "gc=" . $group_uin . "&ul=" . $QQ . "&bkn=" . $this->bkn;
+        $this->Curl->referer = self::REFERER_MEMBER;
         $this->Curl->submit($url,$param);
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);
-        $results = @json_decode(($this->results),true);
-        return @$results['ec'] == 0 ? true : false;
+        $results = $this->results;
+        return $results;
     }
 
     /**
@@ -655,8 +662,8 @@ class SmartQQ
         $this->Curl->submit($url,$param);
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);
-        $results = @json_decode(($this->results),true);
-        return @$results['ec'] == 0 ? true : false;
+        $results = $this->results;
+        return $results;
     }
 
 
@@ -728,24 +735,34 @@ class SmartQQ
         for($i = 0;$i < strlen($ptwebqq); $i++){
             $n[$i % 4] ^= self::charCodeAt($ptwebqq,$i);
         }
-        $u = array('EC', 'OK');
-        $v[0] = $uin >> 24 & 255 ^ self::charCodeAt($u[0],0);
-        $v[1] = $uin >> 16 & 255 ^ self::charCodeAt($u[0],1);
-        $v[2] = $uin >> 8 & 255 ^ self::charCodeAt($u[1],0);
-        $v[3] = $uin & 255 ^ self::charCodeAt($u[1],1);
-        $u = array();
-        for($i = 0;$i < 8; $i++){
-            $u[$i] = ($i%2 == 1)  ? $v[$i >> 1] : $n[$i >> 1];
-        }
-        $n = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F');
-        $v = '';
-        foreach ($u as $i){
-            $v .= $n[($i >> 4) & 15];
-            $v .= $n[$i & 15];
+        $u = ['EC','OK'];
+        $v = [];
+        $v[0] = (((floatval($uin) >> 24) & 255) ^ self::charCodeAt($u[0],0));
+        $v[1] = (((floatval($uin) >> 16) & 255) ^ self::charCodeAt($u[0],1));
+        $v[2] = (((floatval($uin) >> 8) & 255)  ^ self::charCodeAt($u[1],0));
+        $v[3] = ((floatval($uin) & 255) ^ self::charCodeAt($u[1],1));
+        $result = array();
+        for($i=0; $i<8; $i++){
+            if ($i%2 == 0)
+                $result[$i] = $n[$i>>1];
+            else
+                $result[$i] = $v[$i>>1];
         }
 
-        return $v;
+        return self::byte2hex($result);
     }
+
+
+    public static function byte2hex($bytes){//bytes array
+        $hex = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F');
+        $buf = "";
+        for ($i=0;$i<count($bytes);$i++){
+            $buf .= $hex[($bytes[$i]>>4) & 15];
+            $buf .= ($hex[$bytes[$i] & 15]);
+        }
+        return $buf;
+    }
+
 
 
 

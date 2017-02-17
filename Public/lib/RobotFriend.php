@@ -52,6 +52,9 @@ class RobotFriend
         if($uin == ""){
             $result = $this->QQ->getFriendUinList();
             $result = json_decode($result,true);
+            if($result['retcode'] != 0){
+                return false;
+            }
             $result = $result['result']['friends'];
             set_time_limit(0);
             foreach ($result as $item){
@@ -66,12 +69,12 @@ class RobotFriend
             $rs  = $this->dbClass->query($sql);
             if(mysqli_num_rows($rs) > 0){
                 $sql = "UPDATE `dianq_friends_info` SET
-                        `face`='{$result['face']}',`birthday`='{$result['birthday']['year']}{$result['birthday']['month']}{$result['birthday']['day']}',`birthday_y`='{$result['birthday']['year']}',`birthday_m`='{$result['birthday']['month']}',`birthday_d`='{$result['birthday']['day']}',`occupation`='{$result['occupation']}',`phone`='{$result['phone']}',`allow`='{$result['allow']}',`college`='{$result['college']}',`constel`='{$result['constel']}',`blood`='{$result['blood']}',`homepage`='{$result['homepage']}',`stat`='{$result['stat']}',`vip_info`='{$result['vip_info']}',`country`='{$result['country']}',`city`='{$result['city']}',`personal`='{$result['personal']}',`nick`='{$result['nick']}',`shengxiao`='{$result['shengxiao']}',`email`='{$result['email']}',`province`='{$result['province']}',`gender`='{$result['gender']}',`mobile`='{$result['mobile']}'
+                        `face`='{$result['face']}',`birthday`='{$result['birthday']['year']}{$result['birthday']['month']}{$result['birthday']['day']}',`birthday_y`='{$result['birthday']['year']}',`birthday_m`='{$result['birthday']['month']}',`birthday_d`='{$result['birthday']['day']}',`occupation`='{$result['occupation']}',`phone`='{$result['phone']}',`allow`='{$result['allow']}',`college`='{$result['college']}',`constel`='{$result['constel']}',`blood`='{$result['blood']}',`homepage`='{$result['homepage']}',`stat`='{$result['stat']}',`vip_info`='{$result['vip_info']}',`country`='{$result['country']}',`city`='{$result['city']}',`personal`='{$result['personal']}',`nick`='{$result['nick']}',`shengxiao`='{$result['shengxiao']}',`email`='{$result['email']}',`province`='{$result['province']}',`gender`='{$result['gender']}',`mobile`='{$result['mobile']}',`uin`='$uin'
                       WHERE `robot_id` = '$this->robot_id' AND 'qq' = '$qq'  ";
                 $this->dbClass->query($sql);
             }else{
-                $sql = "INSERT INTO `dianq_friends_info`(`robot_id`, `qq`, `face`, `birthday`, `birthday_y`, `birthday_m`, `birthday_d`, `occupation`, `phone`, `allow`, `college`, `constel`, `blood`, `homepage`, `stat`, `vip_info`, `country`, `city`, `personal`, `nick`, `shengxiao`, `email`, `province`, `gender`, `mobile`)
-                                  VALUES ('{$this->robot_id}','{$qq}','{$result['face']}','{$result['birthday']['year']}{$result['birthday']['month']}{$result['birthday']['day']}','{$result['birthday']['year']}','{$result['birthday']['month']}','{$result['birthday']['day']}','{$result['occupation']}','{$result['phone']}','{$result['allow']}','{$result['college']}','{$result['constel']}','{$result['blood']}','{$result['homepage']}','{$result['stat']}','{$result['vip_info']}','{$result['country']}','{$result['city']}','{$result['personal']}','{$result['nick']}','{$result['shengxiao']}','{$result['email']}','{$result['province']}','{$result['gender']}','{$result['mobile']}')";
+                $sql = "INSERT INTO `dianq_friends_info`(`robot_id`, `qq`, `face`, `birthday`, `birthday_y`, `birthday_m`, `birthday_d`, `occupation`, `phone`, `allow`, `college`, `constel`, `blood`, `homepage`, `stat`, `vip_info`, `country`, `city`, `personal`, `nick`, `shengxiao`, `email`, `province`, `gender`, `mobile`,`uin`)
+                                  VALUES ('{$this->robot_id}','{$qq}','{$result['face']}','{$result['birthday']['year']}{$result['birthday']['month']}{$result['birthday']['day']}','{$result['birthday']['year']}','{$result['birthday']['month']}','{$result['birthday']['day']}','{$result['occupation']}','{$result['phone']}','{$result['allow']}','{$result['college']}','{$result['constel']}','{$result['blood']}','{$result['homepage']}','{$result['stat']}','{$result['vip_info']}','{$result['country']}','{$result['city']}','{$result['personal']}','{$result['nick']}','{$result['shengxiao']}','{$result['email']}','{$result['province']}','{$result['gender']}','{$result['mobile']}','$uin')";
                 $this->dbClass->query($sql);
             }
 

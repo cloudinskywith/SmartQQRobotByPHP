@@ -15,6 +15,9 @@ class Robot
     public $name;
     public $online_status;
     public $is_run;
+    public $is_reply;
+    public $is_group_speech;
+    public $is_personal_speech;
     public $cookie;
     public $ptwebqq;
     public $vfwebqq;
@@ -41,6 +44,9 @@ class Robot
             $this->name = $rs['name'];
             $this->online_status = $rs['online_status'];
             $this->is_run = $rs['is_run'];
+            $this->is_personal_speech = $rs['is_personal_speech'];
+            $this->is_group_speech = $rs['is_group_speech'];
+            $this->is_reply = $rs['is_reply'];
             $this->cookie = $rs['cookie'];
             $this->ptwebqq = $rs['ptwebqq'];
             $this->vfwebqq = $rs['vfwebqq'];
@@ -53,6 +59,32 @@ class Robot
             $this->error = false;
         }
     }
+
+
+    /**
+     * @param $plugin_class_name
+     * @return null
+     */
+    public static function runPlugin($plugin_class_name,$getMsg,$RobotFriend,$RobotGroup,$RobotDiscuss) {
+        $RobotPlugin = null;
+        include_once  "Plugin/$plugin_class_name/".$plugin_class_name.".php";
+        eval("@\$RobotPlugin = new " . $plugin_class_name . "(\$getMsg,\$RobotFriend,\$RobotGroup,\$RobotDiscuss);");
+        if ($RobotPlugin == null) return RobotMsg::noReply();
+        @$RobotPlugin->Start();
+        return @$RobotPlugin;
+    }
+
+
+    public function getPluginOrders(){
+        $sql = "SELECT * FROM `dianq_plugin_orders` WHERE  1  ";
+        $rs  = $this->dbClass->query($sql);
+        $array = array();
+        while ($r = $this->dbClass->getone($rs)){
+            $array[] = $r;
+        }
+        return $array;
+    }
+
 
     public function setUserId($user_id){
         $user_id = trim($user_id);
@@ -80,6 +112,39 @@ class Robot
         $sql = "UPDATE `dianq_robot` SET `is_run` = '$is_run' WHERE `id` = '$this->id' ";
         $this->dbClass->query($sql);
         $this->is_run = $is_run;
+    }
+
+
+    /**
+     * @param mixed $is_group_speech
+     */
+    public function setIsGroupSpeech($is_group_speech){
+        $is_group_speech = trim($is_group_speech);
+        $sql = "UPDATE `dianq_robot` SET `is_group_speech` = '$is_group_speech' WHERE `id` = '$this->id' ";
+        $this->dbClass->query($sql);
+        $this->is_group_speech = $is_group_speech;
+    }
+
+
+    /**
+     * @param mixed $is_personal_speech
+     */
+    public function setIsPersonalSpeech($is_personal_speech){
+        $is_personal_speech = trim($is_personal_speech);
+        $sql = "UPDATE `dianq_robot` SET `is_personal_speech` = '$is_personal_speech' WHERE `id` = '$this->id' ";
+        $this->dbClass->query($sql);
+        $this->is_personal_speech = $is_personal_speech;
+    }
+
+
+    /**
+     * @param mixed $is_reply
+     */
+    public function setIsReply($is_reply){
+        $is_reply = trim($is_reply);
+        $sql = "UPDATE `dianq_robot` SET `is_reply` = '$is_reply' WHERE `id` = '$this->id' ";
+        $this->dbClass->query($sql);
+        $this->is_reply = $is_reply;
     }
 
     public function setCreateUin($create_uin){

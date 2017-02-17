@@ -20,16 +20,19 @@ class RobotMsg
 
     }
 
-    public function InsertMsg($msg , $form = "" , $to = ""){
+    public function InsertMsg($msg , $from = "" , $group_uin = ""){
         $time = time();
         $msg  = trim($msg);
-        $form = trim($form);
-        $to   = trim($to);
-        $sql  = "INSERT INTO `dianq_robot_msg`( `robot_id`, `msg`, `from_uin`, `group_uin`, `createdate`) VALUES ('$this->robot_id','$msg','$form','$to','$time')";
+        $from = trim($from);
+        $group_uin   = trim($group_uin);
+        $sql  = "INSERT INTO `dianq_robot_msg`( `robot_id`, `msg`, `from_uin`, `group_uin`, `createdate`) VALUES ('$this->robot_id','$msg','$from','$group_uin','$time')";
         $this->dbClass->query($sql);
     }
 
 
+    public static function noReply(){
+        return null;
+    }
 
 
 }

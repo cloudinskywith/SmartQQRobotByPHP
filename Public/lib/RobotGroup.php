@@ -61,12 +61,23 @@ class RobotGroup
         $result = json_decode($result,true);
         $array = array();
         @$re = $result['join'];
-        foreach ($re as $item){
-            array_push($array,$item);
+        if(isset($re)){
+            foreach ($re as $item){
+                array_push($array,$item);
+            }
         }
         @$re = $result['manage'];
-        foreach ($re as $item){
-            array_push($array,$item);
+        if(isset($re)){
+            foreach ($re as $item){
+                array_push($array,$item);
+            }
+        }
+
+        @$re = $result['create'];
+        if(isset($re)){
+            foreach ($re as $item){
+                array_push($array,$item);
+            }
         }
         return $array;
     }
@@ -85,7 +96,9 @@ class RobotGroup
      *
      */
     public function banMemberSpeech($group_uin, $QQ, $time){
-        return $this->QQ->setMemberSpeech($group_uin, $QQ, $time);
+        $response =  $this->QQ->setMemberSpeech($group_uin, $QQ, $time);
+        $response = json_decode($response,true);
+        return    @$response['ec'];
     }
 
     /**
@@ -104,7 +117,7 @@ class RobotGroup
 
         }else{
             while ($r = $this->dbClass->getone($rs)){
-                self::banMemberSpeech($group_uin, $r['qq'], $time);
+                echo  self::banMemberSpeech($group_uin, $r['qq'], $time);
             }
         }
         return true;

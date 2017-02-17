@@ -57,7 +57,7 @@ class MsgUtil {
 	 * @return string
 	 */
 	public static function chuliMsg($reply) {
-		$reply = preg_replace("/\r\n/is", UCR, $reply);
+		$reply = preg_replace("/\r\n/is", "%5C%5Cn", $reply);
 		$reply = preg_replace('/"/is', '\\\\"', $reply);
 		$reply = preg_replace("/&(.*?);/is", '', $reply);
 		if (count(explode("[face", $reply)) > 1) {

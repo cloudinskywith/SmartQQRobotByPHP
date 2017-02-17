@@ -16,7 +16,7 @@ class CurlUtil
     protected $timeOut;
     public    $link;
     public    $results;
-
+    public    $param;
     public function __construct(){
         $this->cookies = array();
         $this->agent   = "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2970.0 Mobile Safari/537.36";
@@ -70,6 +70,7 @@ class CurlUtil
 
         $ch = curl_init($url);
         $this->link = $url;
+        $this->param = $param;
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_HEADER, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
