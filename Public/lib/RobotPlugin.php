@@ -8,6 +8,7 @@
  */
 class RobotPlugin
 {
+    public $Robot;
     public $RobotFriend;
     public $RobotGroup;
     public $RobotDiscuss;
@@ -16,10 +17,11 @@ class RobotPlugin
     public $getMsg;
 
 
-    public function __construct($getMsg,$RobotFriend,$RobotGroup,$RobotDiscuss){
+    public function __construct($getMsg,$Robot,$RobotFriend,$RobotGroup,$RobotDiscuss){
         $this->RobotFriend  = $RobotFriend;
         $this->RobotGroup   = $RobotGroup;
         $this->RobotDiscuss = $RobotDiscuss;
+        $this->Robot = $Robot;
         $this->MsgCount     = 0;
         $this->getMsg       = $getMsg;
         $this->replyMsg     = array(
@@ -49,6 +51,8 @@ class RobotPlugin
         array_push($this->replyMsg,$msg);
     }
 
-
+    public function isManager($QQ){
+        return $this->Robot->create_uin == $QQ ? true : false;
+    }
 
 }

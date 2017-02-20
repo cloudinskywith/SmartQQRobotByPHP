@@ -154,5 +154,8 @@ class RobotGroup
         return $this->QQ->setGroupAdmin($group_uin, $QQ ,$option);
     }
 
+    public function getGroupCode($from_uin){
+        return null;
+    }
 
 }

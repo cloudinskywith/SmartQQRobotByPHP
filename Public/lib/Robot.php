@@ -41,6 +41,7 @@ class Robot
             $rs  = $this->dbClass->getone($rs);
             $this->user_id = $rs['user_id'];
             $this->uin = $rs['uin'];
+            $this->create_uin = $rs['create_uin'];
             $this->name = $rs['name'];
             $this->online_status = $rs['online_status'];
             $this->is_run = $rs['is_run'];
@@ -65,10 +66,10 @@ class Robot
      * @param $plugin_class_name
      * @return null
      */
-    public static function runPlugin($plugin_class_name,$getMsg,$RobotFriend,$RobotGroup,$RobotDiscuss) {
+    public static function runPlugin($plugin_class_name,$getMsg,$Robot,$RobotFriend,$RobotGroup,$RobotDiscuss) {
         $RobotPlugin = null;
         include_once  "Plugin/$plugin_class_name/".$plugin_class_name.".php";
-        eval("@\$RobotPlugin = new " . $plugin_class_name . "(\$getMsg,\$RobotFriend,\$RobotGroup,\$RobotDiscuss);");
+        eval("@\$RobotPlugin = new " . $plugin_class_name . "(\$getMsg,\$Robot,\$RobotFriend,\$RobotGroup,\$RobotDiscuss);");
         if ($RobotPlugin == null) return RobotMsg::noReply();
         @$RobotPlugin->Start();
         return @$RobotPlugin;
@@ -91,6 +92,13 @@ class Robot
         $sql = "UPDATE `dianq_robot` SET `user_id` = '$user_id' WHERE `id` = '$this->id' ";
         $this->dbClass->query($sql);
         $this->user_id = $user_id;
+    }
+
+    public function setCreateUin($create_uin){
+        $create_uin = trim($create_uin);
+        $sql = "UPDATE `dianq_robot` SET `create_uin` = '$create_uin' WHERE `id` = '$this->id' ";
+        $this->dbClass->query($sql);
+        $this->create_uin = $create_uin;
     }
 
     public function setName($name){
@@ -147,12 +155,6 @@ class Robot
         $this->is_reply = $is_reply;
     }
 
-    public function setCreateUin($create_uin){
-        $create_uin = trim($create_uin);
-        $sql = "UPDATE `dianq_robot` SET `create_uin` = '$create_uin' WHERE `id` = '$this->id' ";
-        $this->dbClass->query($sql);
-        $this->create_uin = $create_uin;
-    }
 
     public function setCookie($cookie){
         $cookie = trim($cookie);

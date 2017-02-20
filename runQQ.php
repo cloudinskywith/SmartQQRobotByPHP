@@ -27,6 +27,11 @@ if($robot_id == ""){
 
     }else{
         $QQ  = new SmartQQ(CurlUtil::CookiesToArray($Robot->cookie),$Robot->ptwebqq,$Robot->vfwebqq,$Robot->psessionid,$Robot->uin,$Robot->skey,$Robot->bkn);
+
+        $RobotFriend = new RobotFriend($robot_id,$dbClass,$QQ);
+        $RobotGroup = new RobotGroup($robot_id,$dbClass,$QQ);
+        $RobotDiscuss = new RobotGroup($robot_id,$dbClass,$QQ);
+
         if($Robot->online_status != StatusUtil::ONLINE){
             if($Robot->online_status == StatusUtil::INIT){
                 $QQ->Curl->fetch("http://127.0.0.1/DianQ/QRcode.php?robot_id=$robot_id");
@@ -83,7 +88,7 @@ if($robot_id == ""){
                         foreach ($orders AS $order){
                             $pro = explode($order['order_name'],$poll['msg']);
                             if(count($pro) >= 2  && $order['status']){
-                                $Plugin = Robot::runPlugin($order['plugin_class'],$poll,$RobotFriend,$RobotGroup,$RobotDiscuss);
+                                $Plugin = Robot::runPlugin($order['plugin_class'],$poll,$Robot,$RobotFriend,$RobotGroup,$RobotDiscuss);
                                 if($Plugin->MsgCount == 0){
                                     $Plugin = null;
                                     continue;
@@ -93,7 +98,7 @@ if($robot_id == ""){
                             }
                         }
                         if($Plugin == null){
-                            $Plugin = Robot::runPlugin("YiBaoPlugin",$poll,$RobotFriend,$RobotGroup,$RobotDiscuss);
+                            $Plugin = Robot::runPlugin("YiBaoPlugin",$poll,$Robot,$RobotFriend,$RobotGroup,$RobotDiscuss);
                         }
                         foreach ($Plugin->replyMsg  as $item){
                             switch ($item['type']){

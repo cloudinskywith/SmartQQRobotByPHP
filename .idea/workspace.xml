@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php" line="14" mnemonic="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d9fcbe15-8020-4265-97b2-5b1686c48386" name="Default" comment="" />
     <ignored path="QQSmart.iws" />
@@ -21,30 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="runQQ.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runQQ.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runQQ.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="528">
+              <caret line="100" column="81" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmartQQ.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/tools/SmartQQ.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15600">
-              <caret line="741" column="30" selection-start-line="741" selection-start-column="30" selection-end-line="741" selection-end-column="30" />
-              <folding>
-                <element signature="n#sendMsg#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getFriendQQList#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getDiscusDidlist#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getSingleLongNick#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getFriendQQBySendUin#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getFriendInfoByUin#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#searchGroupMembers#0;n#SmartQQ#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +37,8 @@
       <file leaf-file-name="demo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="168">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,39 +47,69 @@
       <file leaf-file-name="Robot.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/lib/Robot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="1706">
+              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding>
-                <marker date="1487242344635" expanded="true" signature="658:710" ph="SELECT * FRO... dianq_robot" />
-                <marker date="1487242344635" expanded="true" signature="2337:2379" ph="SELECT * FRO... dianq_plugin_orders" />
-                <marker date="1487242344635" expanded="true" signature="2337:2381" ph="SELECT * FRO... dianq_plugin_orders" />
-                <marker date="1487242344635" expanded="true" signature="2666:2738" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="2902:2968" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="3158:3241" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="3423:3493" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="3751:3839" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="4130:4224" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="4472:4546" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="4735:4813" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="4991:5061" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="5235:5307" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="5483:5555" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="5743:5821" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="5999:6069" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="6231:6297" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="6451:6515" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="6705:6789" ph="UPDATE `dian... " />
-                <marker date="1487242344635" expanded="true" signature="6985:7061" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="658:710" ph="SELECT * FRO... dianq_robot" />
+                <marker date="1487582710451" expanded="true" signature="2403:2445" ph="SELECT * FRO... dianq_plugin_orders" />
+                <marker date="1487582710451" expanded="true" signature="2403:2447" ph="SELECT * FRO... dianq_plugin_orders" />
+                <marker date="1487582710451" expanded="true" signature="2732:2804" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="2991:3069" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="3239:3305" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="3495:3578" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="3760:3830" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="4088:4176" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="4467:4561" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="4809:4883" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="5058:5128" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="5302:5374" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="5550:5622" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="5810:5888" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="6066:6136" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="6298:6364" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="6518:6582" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="6772:6856" ph="UPDATE `dian... " />
+                <marker date="1487582710451" expanded="true" signature="7052:7128" ph="UPDATE `dian... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupManagePlugin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GroupManagePlugin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="380">
+              <caret line="18" column="80" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotGroup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/lib/RobotGroup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="718">
+              <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+              <folding>
+                <element signature="n#updateGroupInfo#0;n#RobotGroup#0;n#!!top" expanded="false" />
+                <element signature="n#getGroupGCList#0;n#RobotGroup#0;n#!!top" expanded="false" />
+                <marker date="1487583731582" expanded="true" signature="642:739" ph="SELECT * FRO... dianq_groups_list" />
+                <marker date="1487583731582" expanded="true" signature="1050:1496" ph="INSERT INTO `dianq_groups_list`... " />
+                <marker date="1487583731582" expanded="true" signature="1542:1978" ph="UPDATE `dian... " />
+                <marker date="1487583731582" expanded="true" signature="2137:2262" ph="SELECT * FRO... dianq_groups_users" />
+                <marker date="1487583731582" expanded="true" signature="2394:2912" ph="INSERT INTO `dianq_groups_users`... " />
+                <marker date="1487583731582" expanded="true" signature="2966:3489" ph="UPDATE `dian... " />
+                <marker date="1487583731582" expanded="true" signature="4868:4962" ph="SELECT * FRO... dianq_groups_users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotPlugin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/lib/RobotPlugin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -152,21 +167,21 @@
         <option value="$PROJECT_DIR$/Public/tools/PluginHandler.php" />
         <option value="$PROJECT_DIR$/Public/tools/StatusUtil.php" />
         <option value="$PROJECT_DIR$/QRcode.php" />
-        <option value="$PROJECT_DIR$/Public/lib/RobotGroup.php" />
         <option value="$PROJECT_DIR$/Public/tools/CurlUtil.php" />
         <option value="$PROJECT_DIR$/Public/tools/MsgUtil.php" />
         <option value="$PROJECT_DIR$/include.php" />
         <option value="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" />
-        <option value="$PROJECT_DIR$/Public/lib/RobotPlugin.php" />
-        <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
         <option value="$PROJECT_DIR$/Public/tools/FunctionUtil.php" />
-        <option value="$PROJECT_DIR$/Public/lib/Robot.php" />
         <option value="$PROJECT_DIR$/Public/lib/RobotMsg.php" />
         <option value="$PROJECT_DIR$/Public/tools/SmartQQ.php" />
-        <option value="$PROJECT_DIR$/demo.php" />
-        <option value="$PROJECT_DIR$/demo.php" />
         <option value="$PROJECT_DIR$/Public/lib/RobotFriend.php" />
+        <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
+        <option value="$PROJECT_DIR$/Public/lib/Robot.php" />
+        <option value="$PROJECT_DIR$/Public/lib/RobotPlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php" />
+        <option value="$PROJECT_DIR$/Public/lib/RobotGroup.php" />
+        <option value="$PROJECT_DIR$/demo.php" />
+        <option value="$PROJECT_DIR$/demo.php" />
         <option value="$PROJECT_DIR$/runQQ.php" />
       </list>
     </option>
@@ -184,8 +199,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -212,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,7 +353,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,19 +455,20 @@
       <workItem from="1487266061943" duration="45000" />
       <workItem from="1487303182290" duration="3802000" />
       <workItem from="1487333244456" duration="40000" />
+      <workItem from="1487578102559" duration="6847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177485000" />
+    <option name="totallyTimeSpent" value="184332000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -584,32 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/lib/RobotGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="n#updateGroupInfo#0;n#RobotGroup#0;n#!!top" expanded="false" />
-            <element signature="n#getGroupGCList#0;n#RobotGroup#0;n#!!top" expanded="false" />
-            <marker date="1487137003942" expanded="true" signature="642:739" ph="SELECT * FRO... dianq_groups_list" />
-            <marker date="1487137003942" expanded="true" signature="1050:1496" ph="INSERT INTO `dianq_groups_list`... " />
-            <marker date="1487137003942" expanded="true" signature="1542:1978" ph="UPDATE `dian... " />
-            <marker date="1487137003942" expanded="true" signature="2137:2262" ph="SELECT * FRO... dianq_groups_users" />
-            <marker date="1487137003942" expanded="true" signature="2394:2912" ph="INSERT INTO `dianq_groups_users`... " />
-            <marker date="1487137003942" expanded="true" signature="2966:3489" ph="UPDATE `dian... " />
-            <marker date="1487137003942" expanded="true" signature="4868:4962" ph="SELECT * FRO... dianq_groups_users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/lib/RobotPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/tools/CurlTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -645,23 +635,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/lib/RobotFriend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="50" />
           <folding>
-            <marker date="1487243709158" expanded="true" signature="568:719" ph="INSERT INTO `dianq_robot_msg`... " />
+            <element signature="n#getFriendInfoByUin#0;n#RobotFriend#0;n#!!top" expanded="false" />
+            <marker date="1487333419379" expanded="true" signature="555:645" ph="SELECT * FRO... dianq_friends_info" />
+            <marker date="1487333419379" expanded="true" signature="993:1974" ph="INSERT INTO `dianq_friends_info`... " />
+            <marker date="1487333419379" expanded="true" signature="2044:2132" ph="SELECT * FRO... dianq_friends_info" />
+            <marker date="1487333419379" expanded="true" signature="3025:3115" ph="SELECT * FRO... dianq_friends_info" />
+            <marker date="1487333419379" expanded="true" signature="3232:4213" ph="UPDATE `dian... " />
+            <marker date="1487333419379" expanded="true" signature="4306:5300" ph="INSERT INTO `dianq_friends_info`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+        <state relative-caret-position="764">
+          <caret line="98" column="68" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/tools/SmartQQ.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15600">
+        <state relative-caret-position="168">
           <caret line="741" column="30" selection-start-line="741" selection-start-column="30" selection-end-line="741" selection-end-column="30" />
           <folding>
             <element signature="n#sendMsg#0;n#SmartQQ#0;n#!!top" expanded="false" />
@@ -675,79 +687,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/lib/RobotFriend.php">
+    <entry file="file://$PROJECT_DIR$/Public/lib/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="1706">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
-            <element signature="n#getFriendInfoByUin#0;n#RobotFriend#0;n#!!top" expanded="false" />
-            <marker date="1487260557260" expanded="true" signature="555:645" ph="SELECT * FRO... dianq_friends_info" />
-            <marker date="1487260557260" expanded="true" signature="993:1974" ph="INSERT INTO `dianq_friends_info`... " />
-            <marker date="1487260557260" expanded="true" signature="2044:2132" ph="SELECT * FRO... dianq_friends_info" />
-            <marker date="1487260557260" expanded="true" signature="3025:3115" ph="SELECT * FRO... dianq_friends_info" />
-            <marker date="1487260557260" expanded="true" signature="3232:4213" ph="UPDATE `dian... " />
-            <marker date="1487260557260" expanded="true" signature="4306:5300" ph="INSERT INTO `dianq_friends_info`... " />
+            <marker date="1487582710451" expanded="true" signature="658:710" ph="SELECT * FRO... dianq_robot" />
+            <marker date="1487582710451" expanded="true" signature="2403:2445" ph="SELECT * FRO... dianq_plugin_orders" />
+            <marker date="1487582710451" expanded="true" signature="2403:2447" ph="SELECT * FRO... dianq_plugin_orders" />
+            <marker date="1487582710451" expanded="true" signature="2732:2804" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="2991:3069" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="3239:3305" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="3495:3578" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="3760:3830" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="4088:4176" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="4467:4561" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="4809:4883" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="5058:5128" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="5302:5374" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="5550:5622" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="5810:5888" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="6066:6136" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="6298:6364" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="6518:6582" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="6772:6856" ph="UPDATE `dian... " />
+            <marker date="1487582710451" expanded="true" signature="7052:7128" ph="UPDATE `dian... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php">
+    <entry file="file://$PROJECT_DIR$/Public/lib/RobotPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="15" />
+        <state relative-caret-position="168">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/lib/Robot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <marker date="1487242344635" expanded="true" signature="658:710" ph="SELECT * FRO... dianq_robot" />
-            <marker date="1487242344635" expanded="true" signature="2337:2379" ph="SELECT * FRO... dianq_plugin_orders" />
-            <marker date="1487242344635" expanded="true" signature="2337:2381" ph="SELECT * FRO... dianq_plugin_orders" />
-            <marker date="1487242344635" expanded="true" signature="2666:2738" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="2902:2968" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="3158:3241" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="3423:3493" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="3751:3839" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="4130:4224" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="4472:4546" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="4735:4813" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="4991:5061" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="5235:5307" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="5483:5555" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="5743:5821" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="5999:6069" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="6231:6297" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="6451:6515" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="6705:6789" ph="UPDATE `dian... " />
-            <marker date="1487242344635" expanded="true" signature="6985:7061" ph="UPDATE `dian... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runQQ.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="528">
+          <caret line="100" column="81" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/lib/RobotGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+          <folding>
+            <element signature="n#updateGroupInfo#0;n#RobotGroup#0;n#!!top" expanded="false" />
+            <element signature="n#getGroupGCList#0;n#RobotGroup#0;n#!!top" expanded="false" />
+            <marker date="1487583731582" expanded="true" signature="642:739" ph="SELECT * FRO... dianq_groups_list" />
+            <marker date="1487583731582" expanded="true" signature="1050:1496" ph="INSERT INTO `dianq_groups_list`... " />
+            <marker date="1487583731582" expanded="true" signature="1542:1978" ph="UPDATE `dian... " />
+            <marker date="1487583731582" expanded="true" signature="2137:2262" ph="SELECT * FRO... dianq_groups_users" />
+            <marker date="1487583731582" expanded="true" signature="2394:2912" ph="INSERT INTO `dianq_groups_users`... " />
+            <marker date="1487583731582" expanded="true" signature="2966:3489" ph="UPDATE `dian... " />
+            <marker date="1487583731582" expanded="true" signature="4868:4962" ph="SELECT * FRO... dianq_groups_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="18" column="80" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="80" />
           <folding />
         </state>
       </provider>
