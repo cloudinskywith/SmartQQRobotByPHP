@@ -11,6 +11,8 @@ class RobotFriend
     public $robot_id;
     public $QQ;
     public $dbClass;
+    public $errorInfo;
+    public $successInfo;
     public function __construct($robot_id,$dbClass,$QQ){
         $this->robot_id = $robot_id;
         $this->QQ       = $QQ;
@@ -49,6 +51,7 @@ class RobotFriend
      */
 
     public function updateFriendInfo($uin = ""){
+        $this->errorInfo = 0;
         if($uin == ""){
             $result = $this->QQ->getFriendUinList();
             $result = json_decode($result,true);
@@ -56,13 +59,21 @@ class RobotFriend
                 return false;
             }
             $result = $result['result']['friends'];
+            if(empty($result) || $result == null || !isset($result)){
+                return false;
+            }
             set_time_limit(0);
+            $this->successInfo = count($result);
             foreach ($result as $item){
                 self::updateFriendInfo($item['uin']);
             }
         }else{
             $result = $this->QQ->getFriendInfoByUin($uin);
             $result = json_decode($result,true);
+            if(!key_exists('result',$result) || $result['result'] == ""){
+                $this->errorInfo ++;
+                return ;
+            }
             $result = $result['result'];
             $qq  = $this->QQ->getFriendQQBySendUin($uin);
             $sql = "SELECT * FROM `dianq_friends_info` WHERE `robot_id` = '$this->robot_id' AND `qq` = '{$qq}'";
@@ -70,7 +81,7 @@ class RobotFriend
             if(mysqli_num_rows($rs) > 0){
                 $sql = "UPDATE `dianq_friends_info` SET
                         `face`='{$result['face']}',`birthday`='{$result['birthday']['year']}{$result['birthday']['month']}{$result['birthday']['day']}',`birthday_y`='{$result['birthday']['year']}',`birthday_m`='{$result['birthday']['month']}',`birthday_d`='{$result['birthday']['day']}',`occupation`='{$result['occupation']}',`phone`='{$result['phone']}',`allow`='{$result['allow']}',`college`='{$result['college']}',`constel`='{$result['constel']}',`blood`='{$result['blood']}',`homepage`='{$result['homepage']}',`stat`='{$result['stat']}',`vip_info`='{$result['vip_info']}',`country`='{$result['country']}',`city`='{$result['city']}',`personal`='{$result['personal']}',`nick`='{$result['nick']}',`shengxiao`='{$result['shengxiao']}',`email`='{$result['email']}',`province`='{$result['province']}',`gender`='{$result['gender']}',`mobile`='{$result['mobile']}',`uin`='$uin'
-                      WHERE `robot_id` = '$this->robot_id' AND 'qq' = '$qq'  ";
+                      WHERE `robot_id` = '$this->robot_id' AND `qq` = '$qq'  ";
                 $this->dbClass->query($sql);
             }else{
                 $sql = "INSERT INTO `dianq_friends_info`(`robot_id`, `qq`, `face`, `birthday`, `birthday_y`, `birthday_m`, `birthday_d`, `occupation`, `phone`, `allow`, `college`, `constel`, `blood`, `homepage`, `stat`, `vip_info`, `country`, `city`, `personal`, `nick`, `shengxiao`, `email`, `province`, `gender`, `mobile`,`uin`)

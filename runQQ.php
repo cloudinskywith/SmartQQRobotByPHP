@@ -63,6 +63,12 @@ if($robot_id == ""){
                         $Robot->setVfwebqq($QQ->vfwebqq);
                         $Robot->setOnlineStatus(StatusUtil::ONLINE);
                         $RobotMsg->InsertMsg("登陆成功");
+                        $RobotFriend->updateFriendInfo();
+                        $RobotMsg->InsertMsg("好友数据共更新" . $RobotFriend->successInfo . "位好友，其中失败" . $RobotFriend->errorInfo . "次");
+                        $RobotGroup->updateGroupInfo();
+                        $RobotGroup->updateGroupUin();
+//                        $RobotMsg->InsertMsg("群数据共更新" . $RobotFriend->successInfo . "位好友，其中失败" . $RobotFriend->errorInfo . "次");
+
                         break;
                     }
                     sleep(1);
@@ -88,29 +94,32 @@ if($robot_id == ""){
                         foreach ($orders AS $order){
                             $pro = explode($order['order_name'],$poll['msg']);
                             if(count($pro) >= 2  && $order['status']){
+
                                 $Plugin = Robot::runPlugin($order['plugin_class'],$poll,$Robot,$RobotFriend,$RobotGroup,$RobotDiscuss);
-                                if($Plugin->MsgCount == 0){
+                                if($Plugin->MsgCount == 0 ){
                                     $Plugin = null;
                                     continue;
                                 }else{
+                                    $Msg = $Plugin->replyMsg;
                                     break;
                                 }
                             }
                         }
-                        if($Plugin == null){
+                        if($Plugin == null && $poll['senderQQ'] != 1000000){
                             $Plugin = Robot::runPlugin("YiBaoPlugin",$poll,$Robot,$RobotFriend,$RobotGroup,$RobotDiscuss);
+                            $Msg = $Plugin->replyMsg;
+                        }else{
+                            if($poll['senderQQ'] == 1000000){
+                                $Msg = array();
+                            }
                         }
-                        foreach ($Plugin->replyMsg  as $item){
+                        foreach ($Msg as $item){
                             switch ($item['type']){
                                 case "personal":
-                                    if($Robot->is_reply && !$Robot->is_personal_speech){
-                                        $QQ->sendMsg($item['uin'],$item['msg']);
-                                    }
+                                    $QQ->sendMsg($item['uin'],$item['msg']);
                                     break;
                                 case "group":
-                                    if($Robot->is_reply && !$Robot->is_group_speech){
-                                        $QQ->sendMsg($item['uin'],$item['msg'],true);
-                                    }
+                                    $QQ->sendMsg($item['uin'],$item['msg'],true);
                                     break;
                                 default:
 

@@ -25,8 +25,8 @@ class YiBaoPlugin extends RobotPlugin
                 $json = file_get_contents($url);
                 $data = json_decode($json,true);
                 $this->setMsgCount(2);
-                $this->setReplyMsg($data['data'],$this->getMsg['send_uin'],"personal");
-                $this->setReplyMsg("已经私聊你了傻子~\n      --学长大大",$this->getMsg['from_uin'],"group");
+//                $this->setReplyMsg($data['data'],$this->getMsg['send_uin'],"personal");
+                $this->setReplyMsg("{$data['data']}~\n      --学长大大",$this->getMsg['from_uin'],"group");
                 break;
             case "sysGroupMsg":
 

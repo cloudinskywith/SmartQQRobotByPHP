@@ -630,6 +630,8 @@ class SmartQQ
 
 
     /**
+     *
+     * 暂时存在问题
      * 邀请别人加入QQ群，被邀请的人必须是自己的好友
      * @param int $group_uin 群号码
      * @param int $member_uin 被邀请的人
@@ -639,7 +641,7 @@ class SmartQQ
     public function addGroupMember($group_uin, $QQ) {
         $url = "http://qun.qq.com/cgi-bin/qun_mgr/add_group_member";
         $param = "gc=" . $group_uin . "&ul=" . $QQ . "&bkn=" . $this->bkn;
-        $this->Curl->referer = self::REFERER_MEMBER;
+        $this->Curl->referer = self::REFERER_MEMBER ;
         $this->Curl->submit($url,$param);
         $this->results = $this->Curl->results;
         $this->results = preg_replace("/&#92;/","",$this->results);

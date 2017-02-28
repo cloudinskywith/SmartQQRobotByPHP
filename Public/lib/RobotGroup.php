@@ -18,6 +18,23 @@ class RobotGroup
         $this->dbClass  = $dbClass;
     }
 
+    public function updateGroupUin(){
+      $result = $this->QQ->getGroupUinList();
+      $result = json_decode($result,true);
+      if($result['retcode'] != 0){
+          return false;
+      }else{
+          $result = $result['result']['gnamelist'];
+          foreach ($result as $value){
+              $name  = $value['name'];
+              $uin = $value['gid'];
+              $sql = "UPDATE `dianq_groups_list` SET `uin` = '$uin' WHERE `robot_id` = '$this->robot_id' AND `gn` = '$name' ";
+              $this->dbClass->query($sql);
+          }
+          return true;
+      }
+    }
+
     public function updateGroupInfo(){
         set_time_limit(0);
         $response = self::getGroupGCList();
@@ -110,18 +127,29 @@ class RobotGroup
      * @return mixed
      *
      */
-    public function banMemberSpeechAll($group_uin,$time){
+    public function banMemberSpeechAll($group_uin,$time,$array = array()){
         $sql = "SELECT * FROM `dianq_groups_users` WHERE `robot_id` = '$this->robot_id' AND `gc`= '$group_uin'";
         $rs  = $this->dbClass->query($sql);
         if(mysqli_num_rows($rs) <= 0){
 
         }else{
             while ($r = $this->dbClass->getone($rs)){
-                echo  self::banMemberSpeech($group_uin, $r['qq'], $time);
+                $f = 0;
+                foreach ($array as $v){
+                    if($r['qq'] == $v){
+                        $f = 1;
+                        break;
+                    }
+                }
+                if($f != 1){
+                    self::banMemberSpeech($group_uin, $r['qq'], $time);
+                }
             }
         }
         return true;
     }
+
+
 
     /**
      * 踢人
@@ -154,8 +182,20 @@ class RobotGroup
         return $this->QQ->setGroupAdmin($group_uin, $QQ ,$option);
     }
 
+
+    public function getInfoByNick($gc,$nick){
+        $sql = "SELECT * FROM dianq_groups_users WHERE gc = '$gc' AND nick = '$nick' ";
+        $rs  = $this->dbClass->query($sql);
+        $rs  = $this->dbClass->getone($rs);
+        return @isset($rs['qq']) ? $rs['qq'] : null;
+    }
+
     public function getGroupCode($from_uin){
-        return null;
+        $sql = "SELECT * FROM `dianq_groups_list` WHERE `uin` = '$from_uin' ";
+        $rs  = $this->dbClass->query($sql);
+        $rs  = $this->dbClass->getone($rs);
+        return @isset($rs['gc']) ? $rs['gc'] : null;
+
     }
 
 }

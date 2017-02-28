@@ -70,26 +70,26 @@ class MusicPlugin extends RobotPlugin
             }
         }
         $pro    = explode("虾米音乐#",$msg);
-        if(count($pro) >= 2){
-            $name   = $pro[1];
-            $replyMsg    = "";
-            if($data['code'] == 0){
+            if(count($pro) >= 2){
+                $name   = $pro[1];
+                $replyMsg    = "";
                 $url    = "http://www.kilingzhang.com/Music/api/search.php?name=$name&source=xiami";
                 $json   = file_get_contents($url);
                 $data   = json_decode($json,true);
-                $data = $data['data'];
-                $i = 0;
-                foreach ($data as $item){
-                    $url    = $item['url'];
-                    $replyMsg .= "歌名：{$item['song_name']}  ({$item['singer_name']})\n";
-                    $replyMsg .= "下载地址:\n";
-                    $replyMsg .= $url . "\n";
-                    $i ++;
-                    if($i >= MUSICCOUNT){
-                        break;
+                if($data['code'] == 0){
+                    $data = $data['data'];
+                    $i = 0;
+                    foreach ($data as $item){
+                        $url    = $item['url'];
+                        $replyMsg .= "歌名：{$item['song_name']}  ({$item['singer_name']})\n";
+                        $replyMsg .= "下载地址:\n";
+                        $replyMsg .= $url . "\n";
+                        $i ++;
+                        if($i >= MUSICCOUNT){
+                            break;
+                        }
                     }
                 }
-            }
         }
 
         switch ($type){
