@@ -1,5 +1,5 @@
 
-# DianQQ机器人
+# DianQQ机器人(QQRobot)
 ##基于SmartQQ Web协议
 > 基于SmartQQ web3.0最新协议    
 > 基于PHP的功能丰富的QQ机器人框架                
