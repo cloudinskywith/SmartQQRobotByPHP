@@ -17,20 +17,20 @@ header('Content-type:text/html;charset=utf-8');
 //header("Access-Control-Allow-Origin: *");
 
 /**
- *  Sky31 API Verification
+ *   API Verification
  *
  *  Role
  *  Hash
  */
 define("Role","YiBao");
-define("Hash","30e9719f4fd15c3f01eb87a6770ff60d");
+define("Hash","");
 
 
 /**
  *  Tuling Api Verification
  */
-define("APIkey","d400e0967d44447eb11afd8ea5ea2b11");
-define("secret","8a08a86c4ae39f34");
+define("APIkey","");
+define("secret","");
 
 
 /**
@@ -48,12 +48,6 @@ define("dbPassword","wxhxa.666Z");
 define("dbTable","DianQ");
 define('dbport', '3306');
 
-/**
- *  Api Database
- */
-//define("dbApiUser","api");
-//define("dbApiPassword","YaKRGZ2mZZMd5wBS");
-//define("dbApiTable","api_cp");
 
 
 
