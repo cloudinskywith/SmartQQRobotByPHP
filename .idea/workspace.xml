@@ -23,87 +23,27 @@
     <favorites_list name="QQSmart" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="runQQ.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runQQ.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="127" column="25" selection-start-line="92" selection-start-column="24" selection-end-line="127" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmartQQ.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/tools/SmartQQ.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="648" column="24" selection-start-line="648" selection-start-column="24" selection-end-line="648" selection-end-column="24" />
-              <folding>
-                <element signature="n#sendMsg#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getFriendQQList#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getDiscusDidlist#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getSingleLongNick#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getFriendQQBySendUin#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#getFriendInfoByUin#0;n#SmartQQ#0;n#!!top" expanded="false" />
-                <element signature="n#searchGroupMembers#0;n#SmartQQ#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupManagePlugin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2333.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2333.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RobotGroup.php" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="RobotGroup.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Public/lib/RobotGroup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
+            <state relative-caret-position="1466">
+              <caret line="169" column="47" lean-forward="false" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
               <folding>
                 <element signature="n#updateGroupUin#0;n#RobotGroup#0;n#!!top" expanded="false" />
                 <element signature="n#updateGroupInfo#0;n#RobotGroup#0;n#!!top" expanded="false" />
                 <element signature="n#getGroupGCList#0;n#RobotGroup#0;n#!!top" expanded="false" />
                 <element signature="n#getGroupCode#0;n#RobotGroup#0;n#!!top" expanded="false" />
-                <marker date="1488261457978" expanded="true" signature="723:824" ph="UPDATE `dian... " />
-                <marker date="1488261457978" expanded="true" signature="1227:1324" ph="SELECT * FRO... dianq_groups_list" />
-                <marker date="1488261457978" expanded="true" signature="1635:2081" ph="INSERT INTO `dianq_groups_list`... " />
-                <marker date="1488261457978" expanded="true" signature="2127:2563" ph="UPDATE `dian... " />
-                <marker date="1488261457978" expanded="true" signature="2722:2847" ph="SELECT * FRO... dianq_groups_users" />
-                <marker date="1488261457978" expanded="true" signature="2979:3497" ph="INSERT INTO `dianq_groups_users`... " />
-                <marker date="1488261457978" expanded="true" signature="3551:4074" ph="UPDATE `dian... " />
-                <marker date="1488261457978" expanded="true" signature="5470:5564" ph="SELECT * FRO... dianq_groups_users" />
-                <marker date="1488261457978" expanded="true" signature="6869:6918" ph="SELECT * FRO... dianq_group_users" />
-                <marker date="1488261457978" expanded="true" signature="6869:6937" ph="SELECT * FRO... dianq_group_users" />
-                <marker date="1488261457978" expanded="true" signature="7150:7197" ph="SELECT * FRO... dianq_groups_list" />
-                <marker date="1488261457978" expanded="true" signature="7150:7209" ph="SELECT * FRO... dianq_groups_list" />
+                <marker date="1514888010127" expanded="true" signature="723:824" ph="UPDATE `dianq_groups_list`... " />
+                <marker date="1514888010127" expanded="true" signature="1227:1324" ph="SELECT * FRO... dianq_groups_list" />
+                <marker date="1514888010127" expanded="true" signature="1635:2081" ph="INSERT INTO `dianq_groups_list`... " />
+                <marker date="1514888010127" expanded="true" signature="2127:2563" ph="UPDATE `dianq_groups_list`... " />
+                <marker date="1514888010127" expanded="true" signature="2722:2847" ph="SELECT * FRO... dianq_groups_users" />
+                <marker date="1514888010127" expanded="true" signature="2979:3497" ph="INSERT INTO `dianq_groups_users`... " />
+                <marker date="1514888010127" expanded="true" signature="3551:4074" ph="UPDATE `dianq_groups_users`... " />
+                <marker date="1514888010127" expanded="true" signature="5470:5564" ph="SELECT * FRO... dianq_groups_users" />
+                <marker date="1514888010127" expanded="true" signature="6869:6937" ph="SELECT * FRO... dianq_groups_users" />
+                <marker date="1514888010127" expanded="true" signature="7150:7209" ph="SELECT * FRO... dianq_groups_list" />
               </folding>
             </state>
           </provider>
@@ -190,21 +130,11 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1380" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -221,138 +151,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YiBaoPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MusicPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DianQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupManagePlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="SmartQQRobotByPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartQQRobotByPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Moli/plugin/api/WebapiHandler.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -373,6 +190,18 @@
       <recent name="F:\phpStudy\WWW\SmartQQ\Public\lib" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
@@ -389,15 +218,6 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -419,6 +239,14 @@
       <test-directory />
       <recursive>false</recursive>
       <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -452,18 +280,19 @@
       <workItem from="1487578102559" duration="6847000" />
       <workItem from="1488031478714" duration="2532000" />
       <workItem from="1488187431534" duration="20221000" />
+      <workItem from="1514888074674" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207085000" />
+    <option name="totallyTimeSpent" value="207096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1841" height="1080" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11080934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -480,6 +309,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -507,13 +339,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/init.php" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="721" column="0" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js" />
     <entry file="file://$PROJECT_DIR$/Public/QRcode/QRcode.png" />
     <entry file="file://$PROJECT_DIR$/Public/demo.php" />
     <entry file="file://$PROJECT_DIR$/Public/index.html" />
@@ -528,7 +354,7 @@
     <entry file="file://$PROJECT_DIR$/runQQ.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -545,16 +371,14 @@
     <entry file="file://$PROJECT_DIR$/Public/lib/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/tools/db.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-          <folding />
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -565,138 +389,80 @@
     <entry file="file://$PROJECT_DIR$/Public/tools/FaceTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QRcode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/lib/RobotDiscuss.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/tools/FunctionTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Moli/plugin/api/WebMusicHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1868">
-          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Moli/plugin/api/WebapiHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Moli/plugin/api/WebMusicHandler.php" />
+    <entry file="file://$PROJECT_DIR$/../Moli/plugin/api/WebapiHandler.php" />
     <entry file="file://$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
-          <folding />
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/lib/RobotPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/lib/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="785">
-          <caret line="202" column="54" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="54" />
-          <folding>
-            <marker date="1487582710451" expanded="true" signature="658:710" ph="SELECT * FRO... dianq_robot" />
-            <marker date="1487582710451" expanded="true" signature="2403:2445" ph="SELECT * FRO... dianq_plugin_orders" />
-            <marker date="1487582710451" expanded="true" signature="2403:2447" ph="SELECT * FRO... dianq_plugin_orders" />
-            <marker date="1487582710451" expanded="true" signature="2732:2804" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="2991:3069" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="3239:3305" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="3495:3578" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="3760:3830" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="4088:4176" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="4467:4561" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="4809:4883" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="5058:5128" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="5302:5374" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="5550:5622" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="5810:5888" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="6066:6136" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="6298:6364" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="6518:6582" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="6772:6856" ph="UPDATE `dian... " />
-            <marker date="1487582710451" expanded="true" signature="7052:7128" ph="UPDATE `dian... " />
-          </folding>
+          <caret line="202" column="54" lean-forward="false" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/tools/CurlTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/lib/RobotFriend.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="n#getFriendInfoByUin#0;n#RobotFriend#0;n#!!top" expanded="false" />
-            <element signature="n#updateFriendInfo#0;n#RobotFriend#0;n#!!top" expanded="false" />
-            <element signature="n#getFriendUinList#0;n#RobotFriend#0;n#!!top" expanded="false" />
-            <marker date="1488198894453" expanded="true" signature="603:693" ph="SELECT * FRO... dianq_friends_info" />
-            <marker date="1488198894453" expanded="true" signature="1041:2022" ph="INSERT INTO `dianq_friends_info`... " />
-            <marker date="1488198894453" expanded="true" signature="2092:2180" ph="SELECT * FRO... dianq_friends_info" />
-            <marker date="1488198894453" expanded="true" signature="3416:3506" ph="SELECT * FRO... dianq_friends_info" />
-            <marker date="1488198894453" expanded="true" signature="3623:4604" ph="UPDATE `dian... " />
-            <marker date="1488198894453" expanded="true" signature="4697:5691" ph="INSERT INTO `dianq_friends_info`... " />
-          </folding>
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2333.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2333.php" />
     <entry file="file://$PROJECT_DIR$/Public/tools/SmartQQ.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="648" column="24" selection-start-line="648" selection-start-column="24" selection-end-line="648" selection-end-column="24" />
+          <caret line="648" column="24" lean-forward="false" selection-start-line="648" selection-start-column="24" selection-end-line="648" selection-end-column="24" />
           <folding>
             <element signature="n#sendMsg#0;n#SmartQQ#0;n#!!top" expanded="false" />
             <element signature="n#getFriendQQList#0;n#SmartQQ#0;n#!!top" expanded="false" />
@@ -711,25 +477,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/lib/RobotGroup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
+        <state relative-caret-position="1466">
+          <caret line="169" column="47" lean-forward="false" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
           <folding>
             <element signature="n#updateGroupUin#0;n#RobotGroup#0;n#!!top" expanded="false" />
             <element signature="n#updateGroupInfo#0;n#RobotGroup#0;n#!!top" expanded="false" />
             <element signature="n#getGroupGCList#0;n#RobotGroup#0;n#!!top" expanded="false" />
             <element signature="n#getGroupCode#0;n#RobotGroup#0;n#!!top" expanded="false" />
-            <marker date="1488261457978" expanded="true" signature="723:824" ph="UPDATE `dian... " />
-            <marker date="1488261457978" expanded="true" signature="1227:1324" ph="SELECT * FRO... dianq_groups_list" />
-            <marker date="1488261457978" expanded="true" signature="1635:2081" ph="INSERT INTO `dianq_groups_list`... " />
-            <marker date="1488261457978" expanded="true" signature="2127:2563" ph="UPDATE `dian... " />
-            <marker date="1488261457978" expanded="true" signature="2722:2847" ph="SELECT * FRO... dianq_groups_users" />
-            <marker date="1488261457978" expanded="true" signature="2979:3497" ph="INSERT INTO `dianq_groups_users`... " />
-            <marker date="1488261457978" expanded="true" signature="3551:4074" ph="UPDATE `dian... " />
-            <marker date="1488261457978" expanded="true" signature="5470:5564" ph="SELECT * FRO... dianq_groups_users" />
-            <marker date="1488261457978" expanded="true" signature="6869:6918" ph="SELECT * FRO... dianq_group_users" />
-            <marker date="1488261457978" expanded="true" signature="6869:6937" ph="SELECT * FRO... dianq_group_users" />
-            <marker date="1488261457978" expanded="true" signature="7150:7197" ph="SELECT * FRO... dianq_groups_list" />
-            <marker date="1488261457978" expanded="true" signature="7150:7209" ph="SELECT * FRO... dianq_groups_list" />
+            <marker date="1514888010127" expanded="true" signature="723:824" ph="UPDATE `dianq_groups_list`... " />
+            <marker date="1514888010127" expanded="true" signature="1227:1324" ph="SELECT * FRO... dianq_groups_list" />
+            <marker date="1514888010127" expanded="true" signature="1635:2081" ph="INSERT INTO `dianq_groups_list`... " />
+            <marker date="1514888010127" expanded="true" signature="2127:2563" ph="UPDATE `dianq_groups_list`... " />
+            <marker date="1514888010127" expanded="true" signature="2722:2847" ph="SELECT * FRO... dianq_groups_users" />
+            <marker date="1514888010127" expanded="true" signature="2979:3497" ph="INSERT INTO `dianq_groups_users`... " />
+            <marker date="1514888010127" expanded="true" signature="3551:4074" ph="UPDATE `dianq_groups_users`... " />
+            <marker date="1514888010127" expanded="true" signature="5470:5564" ph="SELECT * FRO... dianq_groups_users" />
+            <marker date="1514888010127" expanded="true" signature="6869:6937" ph="SELECT * FRO... dianq_groups_users" />
+            <marker date="1514888010127" expanded="true" signature="7150:7209" ph="SELECT * FRO... dianq_groups_list" />
           </folding>
         </state>
       </provider>
@@ -737,7 +501,7 @@
     <entry file="file://$PROJECT_DIR$/runQQ.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
-          <caret line="127" column="25" selection-start-line="92" selection-start-column="24" selection-end-line="127" selection-end-column="25" />
+          <caret line="127" column="25" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="127" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -745,33 +509,28 @@
     <entry file="file://$PROJECT_DIR$/Public/tools/MsgTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-268">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="28" />
-          <folding />
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/tools/StatusTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/lib/RobotMsg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <marker date="1487333419382" expanded="true" signature="568:719" ph="INSERT INTO `dianq_robot_msg`... " />
-          </folding>
+          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
-          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -779,15 +538,14 @@
     <entry file="file://$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
-          <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
-          <folding />
+          <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Plugin/GroupManagePlugin/GroupManagePlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
-          <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
+          <caret line="211" column="16" lean-forward="false" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
           <folding />
         </state>
       </provider>
